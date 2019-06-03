@@ -2,5 +2,6 @@
 
 git clone https://github.com/fetchai/oef-core.git
 cd oef-core
+git checkout 146c833
 ./oef-core-image/scripts/docker-build-img.sh
 ./oef-core-image/scripts/docker-run.sh -d -p 3333:3333 -- &
