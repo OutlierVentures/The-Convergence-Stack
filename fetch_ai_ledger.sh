@@ -12,11 +12,13 @@ error_report() {
 }
 trap 'error_report $LINENO' ERR
 
-echo -e "${onyellow}Installing Fetch ledger...$endcolor"
+echo -e "${onyellow}Installing Fetc.AI ledger...$endcolor"
 git clone https://github.com/fetchai/ledger.git
 cd ledger
 ./scripts/quickstart.sh
 
-echo -e "${ongreen}Fetch ledger installed. Booting...$endcolor"
+echo -e "${ongreen}Starting Fetch.AI ledger...$endcolor"
 cd build/apps/constellation
-./constellation -bootstrap -network alpha
+./constellation -bootstrap -network alpha &> /dev/null &
+
+echo -e "${ongreen}Fetch.AI ledger is running.$endcolor"
