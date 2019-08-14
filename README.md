@@ -4,6 +4,8 @@ Node launchers for the Convergence Stack. Pull requests welcome.
 
 To start a node, just run the relevant script.
 
+To stop a node, run the stop script.
+
 ## Requirements
 
 Linux/MacOS and Docker. The Fetch.AI ledger node does not even require Docker.
