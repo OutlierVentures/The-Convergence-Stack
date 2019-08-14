@@ -26,6 +26,8 @@ get_latest() {
     cd ..
 }
 
+
+echo -e "${onyellow}Installing Fetch.AI OEF node...$endcolor"
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     sudo apt-get update
     sudo apt-get install -y build-essential python3
@@ -52,6 +54,7 @@ get_latest fetchai oef-mt-core
 cd oef-mt-core
 bazel build mt-core/main/src/cpp:app
 
+echo -e "${onyellow}Starting Fetch.AI OEF node...$endcolor"
 cd oef-search-pluto
 python3 scripts/launch.py -c ./scripts/launch_config.json --background &> /dev/null
 cd ../oef-mt-core
