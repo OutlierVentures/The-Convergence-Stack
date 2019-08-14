@@ -29,13 +29,13 @@ get_latest() {
 echo -e "${onyellow}Installing Ocean Protocol node...$endcolor"
 get_latest oceanprotocol barge
 
-echo -e "${onyellow}Starting Ocean Protocol Node...$endcolor"
+echo -e "${onyellow}Starting Ocean Protocol node...$endcolor"
 cd ../barge
 ./start_ocean.sh --latest --no-pleuston --no-brizo --local-pacific-node --force-pull &> /dev/null &
 
 while [ "$id" != "" ]; do
     id=$(docker container ls | grep ocean_ | awk '{print $1}')
-    sleep 2
+    sleep 1
 done
 
 echo -e "${ongreen}Ocean Protocol node is running.$endcolor"
