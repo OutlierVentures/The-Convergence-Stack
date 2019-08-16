@@ -1,4 +1,4 @@
-# Convergence Stack Nodes
+# The Convergence Stack
 
 Node launchers and [wiki](https://github.com/OutlierVentures/Convergence-Stack-Nodes/wiki/The-Convergence-Stack) for the Convergence Stack:
 
