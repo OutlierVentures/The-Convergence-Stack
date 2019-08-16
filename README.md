@@ -1,6 +1,6 @@
 # Convergence Stack Nodes
 
-Node launchers and [wiki](https://github.com/OutlierVentures/Convergence-Stack-Nodes/wiki) for the Convergence Stack. Pull requests welcome.
+Node launchers and [wiki](https://github.com/OutlierVentures/Convergence-Stack-Nodes/wiki) for the Convergence Stack:
 
 ![The Convergence Stack](./convergencestack.png)
 
